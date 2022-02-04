@@ -1,0 +1,83 @@
+.App {
+  --shadow: 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.TodoContainer {
+  margin: 1rem;
+  padding: 1rem;
+  background-color: rgba(255, 255, 255, 0.08);
+  width: 100%;
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 0.5rem;
+  box-shadow: var(--shadow);
+}
+.todoHeader {
+  margin: 0.1rem;
+  letter-spacing: 0.2rem;
+  text-transform: uppercase;
+  font-weight: 100;
+  text-align: center;
+  color: white;
+}
+.todoHolder {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.TodoForm {
+  display: inline-flex;
+  justify-content: center;
+  padding: 1rem;
+}
+input {
+  border: none;
+  padding: 0.4rem 1rem;
+  font-size: 0.8rem;
+  border-radius: 0.2rem;
+}
+.submitBtn {
+  margin-left: 1rem;
+  background-color: var(--color3);
+  color: var(--color2);
+  border: none;
+  padding: 0.4rem 1rem;
+  border-radius: 0.2rem;
+}
+
+.Todo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1rem;
+  padding: 0.2rem 0rem;
+  border-radius: 0.4rem;
+  background-color: var(--color2);
+  box-shadow: var(--shadow);
+  transition: 0.3s ease-in-out;
+}
+.todoTask {
+  max-width: 80%;
+  margin: 0;
+  padding: 0.2rem;
+  font-size: 18px;
+  flex: 1;
+}
+.todoIndex {
+  margin: 0;
+}
+.completed {
+  background-color: var(--color3);
+  color: var(--color2);
+}
+.completed > p {
+  text-decoration: line-through;
+  text-decoration-style: wavy;
+  text-decoration-color: rgba(0, 0, 0, 0.8);
+  text-decoration-thickness: 0.2rem;
+}
