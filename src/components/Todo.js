@@ -8,7 +8,10 @@ export default function Todo({ todo, deleteTodo, toggleTodoStatus }) {
       <p className="todoTask" onClick={() => toggleTodoStatus(todo.id)}>
         {todo.task}
       </p>
-      <MdOutlineClose onClick={() => deleteTodo(todo.id)} />
+      <MdOutlineClose
+        className="todoDeleteBtn"
+        onClick={() => deleteTodo(todo.id)}
+      />
     </div>
   );
 }

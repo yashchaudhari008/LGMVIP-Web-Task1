@@ -8,7 +8,7 @@
   margin: 1rem;
   padding: 1rem;
   background-color: rgba(255, 255, 255, 0.08);
-  width: 100%;
+  width: 85vw;
   max-width: 500px;
   display: flex;
   flex-direction: column;
@@ -30,7 +30,9 @@
 }
 
 .TodoForm {
-  display: inline-flex;
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
 }
@@ -41,7 +43,6 @@ input {
   border-radius: 0.2rem;
 }
 .submitBtn {
-  margin-left: 1rem;
   background-color: var(--color3);
   color: var(--color2);
   border: none;
@@ -62,14 +63,20 @@ input {
   transition: 0.3s ease-in-out;
 }
 .todoTask {
-  max-width: 80%;
   margin: 0;
   padding: 0.2rem;
   font-size: 18px;
   flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .todoIndex {
   margin: 0;
+  margin-left: 0.5rem;
+}
+.todoDeleteBtn {
+  margin: 0;
+  margin-right: 0.5rem;
 }
 .completed {
   background-color: var(--color3);

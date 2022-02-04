@@ -11,13 +11,11 @@ export default function TodoForm({ addTodo }) {
   };
 
   return (
-    <div className="TodoForm">
-      <form>
-        <input type="text" placeholder="Add a Todo" ref={todo} name="todo" />
-        <button className="submitBtn" type="submit" onClick={handleSubmit}>
-          Add Todo
-        </button>
-      </form>
-    </div>
+    <form className="TodoForm">
+      <input type="text" placeholder="Add a Todo" ref={todo} name="todo" />
+      <button className="submitBtn" type="submit" onClick={handleSubmit}>
+        Add Todo
+      </button>
+    </form>
   );
 }
